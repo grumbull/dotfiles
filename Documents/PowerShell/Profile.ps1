@@ -19,11 +19,14 @@ Use-DotFiles config --local status.showUntrackedFiles no
 # scoop install 'https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json'
 
 # VSCode registry stuff after scoop install
+# What to do with VSCode settings changes on new scoop version install?
 
 # Install Casdcadia Code NerdFont via
 # oh-my-posh font install
 
 # Install vsvim automatically?
+# git config --global init.defaultBranch main
+
 
 scoop update
 oh-my-posh font install
