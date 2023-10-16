@@ -5,7 +5,7 @@
         },
         {
             "name": "WinTerm",
-            "path": "..\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState",
+            "path": "..\\scoop\\apps\\windows-terminal\\current\\settings",
             "files.exclude": {
                 "state.json": true
             }
