@@ -7,14 +7,17 @@ function Use-Dotfiles {
 set-alias "df" "Use-Dotfiles"
 
 function Open-DotfilesWorkspace {
-    code "$ConfigRoot\.config.code-workspace"
+    code "$ConfigRoot\dotfiles.code-workspace"
 }
 Set-Alias "dfws" "Open-DotfilesWorkspace"
 Use-DotFiles config --local status.showUntrackedFiles no
 
-scoop install 'https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json'
+
+# On each powershell startup, export scoop installs to VCS tracked file
 
 # Scoop install list
+# scoop install 'https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json'
+
 # VSCode registry stuff after scoop install
 
 # Install Casdcadia Code NerdFont via

@@ -1,0 +1,37 @@
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "name": "WinTerm",
+            "path": "..\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState",
+            "files.exclude": {
+                "state.json": true
+            }
+        },
+        {
+            "name": "VSCode",
+            "path": "..\\scoop\\apps\\vscode\\current\\data\\user-data\\User",
+            "files.exclude": {
+                "globalStorage": true,
+                "History": true,
+                "snippets": true,
+                "workspaceStorage": true,
+            }
+        },
+        {
+            "name": "Powershell",
+            "path": "..\\Documents\\Powershell",
+        },
+    ],
+    "settings": {
+        "files.exclude":{
+            "**state.json" : true,
+            "**globalStorage" : true,
+            "**History" : true,
+            "**snippets" : true,
+            "**workspaceStorage" : true,
+        }
+    }
+}
