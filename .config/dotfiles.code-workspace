@@ -5,20 +5,14 @@
         },
         {
             "name": "WinTerm",
-            "path": "..\\scoop\\apps\\windows-terminal\\current\\settings",
+            "path": "..\\scoop\\persist\\windows-terminal\\settings",
             "files.exclude": {
                 "state.json": true
             }
         },
         {
             "name": "VSCode",
-            "path": "..\\scoop\\apps\\vscode\\current\\data\\user-data\\User",
-            "files.exclude": {
-                "globalStorage": true,
-                "History": true,
-                "snippets": true,
-                "workspaceStorage": true,
-            }
+            "path": "..\\scoop\\persist\\vscode\\data\\user-data\\User",
         },
         {
             "name": "Powershell",

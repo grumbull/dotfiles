@@ -1,0 +1,16 @@
+{
+    "debug.console.fontFamily": "'CaskaydiaCove Nerd Font Mono', 'Cascadia Code', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font Mono', 'Cascadia Code', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.renderWhitespace": "all",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Mono', 'Cascadia Code', Consolas, 'Courier New', monospace",
+    "vim.insertModeKeyBindings": [
+        { "before": ["j","j"], "after":["<Esc>"]}
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {"before": ["o"], "after": ["o", "<Esc>"]}
+    ],
+    "vim.useCtrlKeys": false
+}
