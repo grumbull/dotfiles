@@ -23,8 +23,7 @@ function Sync-Configs {
 # First time setup Notes:
 #   VSCode registry stuff after scoop install
 #   Winterm registry stuff after scoop install
-#   Install Casdcadia Code NerdFont via
-#   oh-my-posh font install
+#   Install Casdcadia Code NerdFont via  oh-my-posh font install
 #   Install vsvim automatically?
 #   git config --global init.defaultBranch main
 #   Use-DotFiles config --local status.showUntrackedFiles no (if using a bare repo)
