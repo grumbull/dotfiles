@@ -1,24 +1,15 @@
 $ConfigRoot = "$HOME\.config"
 $ScoopApps = "$HOME\scoop\apps"
 
-function Use-Dotfiles {
+function Use-DotfilesRepo {
     git --git-dir="$HOME\.dotfiles" --work-tree "$HOME" @Args
 }
-set-alias "df" "Use-Dotfiles"
+set-alias "df" "Use-DotfilesRepo"
 
 function Open-DotfilesWorkspace {
     code "$ConfigRoot\dotfiles.code-workspace"
 }
 Set-Alias "dfws" "Open-DotfilesWorkspace"
-
-function Sync-Configs {
-    # Copy "golden" VSCode/winterm config to the current install ala scoop.
-    # Scoop "current" folder is just a shortcut to a versioned folder, so the source exists elsewhere.
-    # Could consider a link, but not sure if hot-reload is support for links. This is good enough.
-    Copy-Item -Force "$ConfigRoot\vscode\settings.json" "$ScoopApps\vscode\current\data\user-data\User"
-    Copy-Item -Force "$ConfigRoot\winterm\settings.json" "$ScoopApps\windows-terminal\current\settings"
-}
-
 
 # First time setup Notes:
 #   VSCode registry stuff after scoop install
@@ -28,9 +19,33 @@ function Sync-Configs {
 #   git config --global init.defaultBranch main
 #   Use-DotFiles config --local status.showUntrackedFiles no (if using a bare repo)
 
-scoop update
-# On each powershell startup, export scoop installs to VCS tracked file
+function Start-DailySync {
+    param (
+        [Parameter(Mandatory = $false)]
+        [switch] $force
+    )
 
-$ompThemeName = 'hotstick.minimal'
-$ompThemePath = "$ScoopApps\oh-my-posh\current\themes\$ompThemeName.omp.json"
-oh-my-posh init pwsh --config $ompThemePath | Invoke-Expression
+    $lastRunDate = (scoop config).last_update.Date
+    $todayDate = (Get-Date).Date
+    if (-not $force -and ($lastRunDate -ge $todayDate)) { return }
+
+    scoop update
+    Write-Host "Syncing dotfiles to prevent conficts." -ForegroundColor Blue
+    Use-DotfilesRepo pull
+    Write-Host "Adding all tracked files under current location to staging." -ForegroundColor Blue
+    Use-DotfilesRepo add . -u
+    Write-Host "Commiting and pushing to remote." -ForegroundColor Blue
+    $dateString = Get-Date -Format 'yyyyMMddTHHmmss'
+    Use-DotfilesRepo commit -m "Automated commit from Start-DailySync@$dateString"
+    Use-DotfilesRepo push
+    Write-Host "Done." -ForegroundColor Blue
+}
+
+function Start-Shell {
+    $ompThemeName = 'quick-term'
+    $ompThemePath = "$ScoopApps\oh-my-posh\current\themes\$ompThemeName.omp.json"
+    oh-my-posh init pwsh --config $ompThemePath | Invoke-Expression
+}
+
+Start-Shell
+Start-DailySync
