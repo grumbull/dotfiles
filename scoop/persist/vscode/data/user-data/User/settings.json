@@ -12,5 +12,7 @@
     "vim.normalModeKeyBindingsNonRecursive": [
         {"before": ["o"], "after": ["o", "<Esc>"]}
     ],
-    "vim.useCtrlKeys": false
+    "vim.useCtrlKeys": false,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
 }

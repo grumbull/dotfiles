@@ -1,150 +1,150 @@
 {
+    "apps": [
+        {
+            "Info": "",
+            "Version": "22.01",
+            "Name": "7zip",
+            "Updated": "2022-11-06T22:17:46.0253106-05:00",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Version": "3.11.2",
+            "Name": "dark",
+            "Updated": "2022-11-06T22:18:18.2676399-05:00",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Version": "1.0.9010-15",
+            "Name": "discord",
+            "Updated": "2023-10-16T18:18:04.1147215-04:00",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Version": "4.124",
+            "Name": "flux",
+            "Updated": "2023-10-16T21:23:05.4245605-04:00",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Version": "2.38.1.windows.1",
+            "Name": "git",
+            "Updated": "2022-11-06T22:17:54.2621809-05:00",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Version": "4.1.3",
+            "Name": "godot-mono",
+            "Updated": "2023-11-05T14:49:14.797298-05:00",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Version": "1.2.10.6",
+            "Name": "greenshot",
+            "Updated": "2023-10-16T21:24:17.7437451-04:00",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Version": "2.0.4.17212",
+            "Name": "jetbrains-toolbox",
+            "Updated": "2023-10-16T21:25:11.6396872-04:00",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Version": "22.06.0.1289",
+            "Name": "klogg",
+            "Updated": "2023-10-16T18:03:40.6605456-04:00",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Version": "4.12.0",
+            "Name": "miniconda3",
+            "Updated": "2022-11-06T22:22:40.5232404-05:00",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Version": "2023.5",
+            "Name": "mullvadvpn-np",
+            "Updated": "2023-10-16T21:28:57.2138875-04:00",
+            "Source": "nonportable"
+        },
+        {
+            "Info": "",
+            "Version": "1.0.3",
+            "Name": "obsidian",
+            "Updated": "2022-11-21T12:59:47.7834241-05:00",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Version": "18.23.3",
+            "Name": "oh-my-posh",
+            "Updated": "2023-11-06T17:12:52.389388-05:00",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Version": "0.74.1",
+            "Name": "powertoys",
+            "Updated": "2023-10-16T18:07:38.7601861-04:00",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Version": "3.11.0",
+            "Name": "python",
+            "Updated": "2022-11-06T22:18:45.3277846-05:00",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Version": "0.2018.07.25",
+            "Name": "touch",
+            "Updated": "2023-10-15T18:09:01.8416152-04:00",
+            "Source": "main"
+        },
+        {
+            "Info": "",
+            "Version": "1.83.1",
+            "Name": "vscode",
+            "Updated": "2023-10-16T07:58:02.9332091-04:00",
+            "Source": "extras"
+        },
+        {
+            "Info": "",
+            "Version": "1.18.2822.0",
+            "Name": "windows-terminal",
+            "Updated": "2023-10-16T17:40:12.6421972-04:00",
+            "Source": "extras"
+        }
+    ],
     "buckets": [
         {
             "Name": "extras",
             "Source": "https://github.com/ScoopInstaller/Extras",
-            "Updated": "2023-11-06T15:24:10-05:00",
+            "Updated": "2023-11-11T10:02:04-05:00",
             "Manifests": 1888
         },
         {
             "Name": "main",
             "Source": "https://github.com/ScoopInstaller/Main",
-            "Updated": "2023-11-06T15:24:21-05:00",
+            "Updated": "2023-11-11T03:24:49-05:00",
             "Manifests": 1262
         },
         {
             "Name": "nonportable",
             "Source": "https://github.com/ScoopInstaller/Nonportable",
-            "Updated": "2023-11-06T15:28:55-05:00",
+            "Updated": "2023-11-11T07:43:07-05:00",
             "Manifests": 127
-        }
-    ],
-    "apps": [
-        {
-            "Updated": "2022-11-06T22:17:46.0253106-05:00",
-            "Version": "22.01",
-            "Info": "",
-            "Source": "main",
-            "Name": "7zip"
-        },
-        {
-            "Updated": "2022-11-06T22:18:18.2676399-05:00",
-            "Version": "3.11.2",
-            "Info": "",
-            "Source": "main",
-            "Name": "dark"
-        },
-        {
-            "Updated": "2023-10-16T18:18:04.1147215-04:00",
-            "Version": "1.0.9010-15",
-            "Info": "",
-            "Source": "extras",
-            "Name": "discord"
-        },
-        {
-            "Updated": "2023-10-16T21:23:05.4245605-04:00",
-            "Version": "4.124",
-            "Info": "",
-            "Source": "extras",
-            "Name": "flux"
-        },
-        {
-            "Updated": "2022-11-06T22:17:54.2621809-05:00",
-            "Version": "2.38.1.windows.1",
-            "Info": "",
-            "Source": "main",
-            "Name": "git"
-        },
-        {
-            "Updated": "2023-11-05T14:49:14.797298-05:00",
-            "Version": "4.1.3",
-            "Info": "",
-            "Source": "extras",
-            "Name": "godot-mono"
-        },
-        {
-            "Updated": "2023-10-16T21:24:17.7437451-04:00",
-            "Version": "1.2.10.6",
-            "Info": "",
-            "Source": "extras",
-            "Name": "greenshot"
-        },
-        {
-            "Updated": "2023-10-16T21:25:11.6396872-04:00",
-            "Version": "2.0.4.17212",
-            "Info": "",
-            "Source": "extras",
-            "Name": "jetbrains-toolbox"
-        },
-        {
-            "Updated": "2023-10-16T18:03:40.6605456-04:00",
-            "Version": "22.06.0.1289",
-            "Info": "",
-            "Source": "extras",
-            "Name": "klogg"
-        },
-        {
-            "Updated": "2022-11-06T22:22:40.5232404-05:00",
-            "Version": "4.12.0",
-            "Info": "",
-            "Source": "extras",
-            "Name": "miniconda3"
-        },
-        {
-            "Updated": "2023-10-16T21:28:57.2138875-04:00",
-            "Version": "2023.5",
-            "Info": "",
-            "Source": "nonportable",
-            "Name": "mullvadvpn-np"
-        },
-        {
-            "Updated": "2022-11-21T12:59:47.7834241-05:00",
-            "Version": "1.0.3",
-            "Info": "",
-            "Source": "extras",
-            "Name": "obsidian"
-        },
-        {
-            "Updated": "2023-11-06T17:12:52.389388-05:00",
-            "Version": "18.23.3",
-            "Info": "",
-            "Source": "main",
-            "Name": "oh-my-posh"
-        },
-        {
-            "Updated": "2023-10-16T18:07:38.7601861-04:00",
-            "Version": "0.74.1",
-            "Info": "",
-            "Source": "extras",
-            "Name": "powertoys"
-        },
-        {
-            "Updated": "2022-11-06T22:18:45.3277846-05:00",
-            "Version": "3.11.0",
-            "Info": "",
-            "Source": "main",
-            "Name": "python"
-        },
-        {
-            "Updated": "2023-10-15T18:09:01.8416152-04:00",
-            "Version": "0.2018.07.25",
-            "Info": "",
-            "Source": "main",
-            "Name": "touch"
-        },
-        {
-            "Updated": "2023-10-16T07:58:02.9332091-04:00",
-            "Version": "1.83.1",
-            "Info": "",
-            "Source": "extras",
-            "Name": "vscode"
-        },
-        {
-            "Updated": "2023-10-16T17:40:12.6421972-04:00",
-            "Version": "1.18.2822.0",
-            "Info": "",
-            "Source": "extras",
-            "Name": "windows-terminal"
         }
     ]
 }
