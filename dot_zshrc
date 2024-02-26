@@ -1,10 +1,10 @@
 export DOTNET_ROOT=/usr/local/share/dotnet
 export PATH=$PATH:$DOTNET_ROOT
-
-
 export DOTNET_TOOLS=$HOME/.dotnet/tools
 export PATH=$PATH:$DOTNET_TOOLS
-export EDITOR='nvim'
 
+export EDITOR=nvim
 
-eval "$(oh-my-posh init zsh)"
+export OMP_THEME_NAME=catppuccin_mocha
+export OMP_THEME_PATH="$(brew --prefix oh-my-posh)/themes/$OMP_THEME_NAME.omp.json"
+eval "$(oh-my-posh init zsh --config $OMP_THEME_PATH)"
