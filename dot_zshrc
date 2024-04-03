@@ -1,4 +1,4 @@
-export XDG_CONFIG_HOME="~/.config"
+export XDG_CONFIG_HOME="/Users/mike/.config"
 export DOTNET_ROOT=/usr/local/share/dotnet
 export PATH=$PATH:$DOTNET_ROOT
 
