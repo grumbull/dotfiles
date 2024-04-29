@@ -12,7 +12,6 @@ config.font = wezterm.font_with_fallback({
 })
 config.window_decorations = "RESIZE"
 config.window_close_confirmation = "AlwaysPrompt"
-config.window_background_opacity = 0.95
 config.scrollback_lines = 3000
 
 -- Window startup location
@@ -20,7 +19,7 @@ config.scrollback_lines = 3000
 local taskbar_height = 75
 local background_padding = 100
 wezterm.on("gui-startup", function(cmd)
-	local tab, pane, window = mux.spawn_window(cmd or {})
+	local _, _, window = mux.spawn_window(cmd or {})
 	local main_screen = wezterm.gui.screens().main
 	window:gui_window():set_position(background_padding, background_padding)
 	window:gui_window():set_inner_size(
@@ -34,4 +33,3 @@ config.default_prog = { "C:\\Users\\mike\\scoop\\shims\\nu.EXE" }
 
 -- and finally, return the configuration to wezterm
 return config
-
