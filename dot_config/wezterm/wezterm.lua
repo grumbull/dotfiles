@@ -18,14 +18,9 @@ config.scrollback_lines = 3000
 -- TODO #mac, window position might be bad.
 local taskbar_height = 75
 local background_padding = 100
-wezterm.on("gui-startup", function(cmd)
-	local _, _, window = mux.spawn_window(cmd or {})
-	local main_screen = wezterm.gui.screens().main
-	window:gui_window():set_position(background_padding, background_padding)
-	window:gui_window():set_inner_size(
-		main_screen.width - background_padding * 2,
-		main_screen.height - background_padding * 2 - taskbar_height
-	)
+wezterm.on("gui-startup", function()
+	local tab, pane, window = mux.spawn_window{}
+	window:gui_window():maximize()
 end)
 
 -- TODO #mac install location is different on MacOS
