@@ -3,3 +3,16 @@ theme = "kanagawa"
 
 [keys.insert]
 j = { j = "normal_mode" } # Maps `jj` to exit insert mode
+
+[editor]
+line-number = "relative"
+bufferline = "always"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
