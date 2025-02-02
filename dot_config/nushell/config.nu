@@ -20,3 +20,6 @@
 # Fix bug in nushell+wezterm where any keypress causes a newline.
 # https://github.com/nushell/nushell/issues/5585
 $env.config.shell_integration.osc133 = false
+
+# Use helix as default editor
+$env.config.buffer_editor = "hx"
