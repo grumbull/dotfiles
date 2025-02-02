@@ -2,5 +2,5 @@
 .config/helix/config.toml
 {{ end }}
 {{ if ne .chezmoi.os "windows" }}
-AppData/Roaming/helix.config.toml
+AppData/Roaming/helix/config.toml
 {{ end }}

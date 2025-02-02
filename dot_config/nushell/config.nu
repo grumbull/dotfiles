@@ -23,3 +23,5 @@ $env.config.shell_integration.osc133 = false
 
 # Use helix as default editor
 $env.config.buffer_editor = "hx"
+
+$env.config.show_banner = false
