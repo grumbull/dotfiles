@@ -18,13 +18,7 @@ config.use_fancy_tab_bar = false
 -- TODO #mac install location is different on MacOS
 config.default_prog = { "C:\\Users\\mike\\scoop\\shims\\nu.EXE" }
 
-config.disable_default_key_bindings = true
 config.keys = {}
-table.insert(config.keys, {
-  key = 'P',
-  mods = 'CTRL|SHIFT',
-  action = act.ActivateCommandPalette,
-})
 
 -- Tab management
 local tab_mod <const> = 'ALT'
@@ -58,6 +52,19 @@ table.insert(config.keys, {
   key = '-',
   mods = tab_mod,
   action = act.ActivateLastTab, 
+})
+-- Manually rename tab
+table.insert(config.keys, {
+  key = 'r',
+  mods = tab_mod,
+  action = act.PromptInputLine {
+    description = 'Enter new name for tab',
+    action = wezterm.action_callback(function(window, pane, line)
+      if line then
+        window:active_tab():set_title(line)
+      end
+    end),
+  },
 })
 
 -- Pane Management
