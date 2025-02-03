@@ -1,9 +1,0 @@
-export XDG_CONFIG_HOME="/Users/mike/.config"
-export DOTNET_ROOT=/usr/local/share/dotnet
-export PATH=$PATH:$DOTNET_ROOT
-
-export DOTNET_TOOLS=$HOME/.dotnet/tools
-export PATH=$PATH:$DOTNET_TOOLS
-export EDITOR='hx'
-
-eval "$(oh-my-posh init zsh)"

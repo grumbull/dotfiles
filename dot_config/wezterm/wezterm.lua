@@ -16,7 +16,7 @@ config.scrollback_lines = 3000
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
 -- TODO #mac install location is different on MacOS
-config.default_prog = { "C:\\Users\\mike\\scoop\\shims\\nu.EXE" }
+config.default_prog = { "~\\scoop\\shims\\nu.EXE" }
 
 config.keys = {}
 
